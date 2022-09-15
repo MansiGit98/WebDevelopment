@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h3>HTML Forms</h3>
+    <form action="backend.php">
+        <h5>Form 1</h5>
+        Name: <input type="text">
+        Branch: <input type="text">
+        <hr>
+        <h5>Form 2</h5>
+        <div>
+            <input type="checkbox" checked> I am filling this form.
+        </div>
+        <br>
+        <label for="name"> Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+            Branch: <input type="text">
+        </div>
+        <br><!-- Avoid it -->
+        <div>
+            Id: <input type="email" name="KerbosID">
+            Bonus: <input type="number" name="TodayBonus">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="TodayDate">
+            <label for="state">State</label>
+            <select name="MyHome" id="state">
+                <option value="Delhi">Delhi NCR</option>
+                <option value="UP" selected>UP</option>
+                <option value="Mht">Maharastra</option>
+                <option value="Rj">Rajasthan</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="My gender"> Female <input type="radio" name="My gender"> Other <input
+                type="radio" name="My gender">
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br><textarea name="About me" cols="20" rows="5"></textarea>
+        </div>
+        <br>
+        <div>
+            Are you sure to submit? <input type="checkbox">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit It">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Pacifico&family=Patrick+Hand&family=Satisfy&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* .back-video {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+            z-index: -50;
+        }
+        #vd1 {
+            top: 2000px;
+            left: 0;
+        } */
+        #pic1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            object-fit: cover;
+            opacity: 0.6;
+            z-index: -1;
+
+        }
+
+        .d1 {
+            display: flex;
+            /* border: 2px solid white; */
+            margin: 0px;
+            height: 480px;
+        }
+
+
+        .logo {
+            display: inline-block;
+            border: 2px solid rgb(63, 30, 30);
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            position: relative;
+            margin-top: 5px;
+            margin-right: 50px;
+            background-image: url("pic8.webp");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .title {
+            display: inline;
+            color: rgb(34, 3, 3);
+            font-family: 'Pacifico', cursive;
+            /* text-shadow: 2px 2px azure; */
+            line-height: 130px;
+            font-size: 90px;
+            position: relative;
+            width: 500px;
+            height: 300px;
+            margin-top: 100px;
+            margin-left: 150px;
+            text-align: center;
+            animation-name: aniT;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes aniT {
+            0% {
+                text-shadow: 2px 2px 0px azure;
+            }
+
+            /* 25% {
+                text-shadow: 2px 2px 2px azure;
+            }
+
+            50% {
+                text-shadow: 2px 2px 4px azure;
+            }
+
+            75% {
+                text-shadow: 2px 2px 6px azure;
+            } */
+
+            100% {
+                text-shadow: 2px 2px 8px azure;
+            }
+
+        }
+
+
+        .cont {
+            height: 100px;
+            width: 100%;
+            /* border: 2px solid black; */
+            background-color: rgba(240, 248, 255, 0.253);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .box {
+            width: 150px;
+            height: 50px;
+            border-left: 3px solid black;
+            /* border: 3px solid black; */
+            padding: 4px;
+        }
+
+
+        .box a {
+            color: rgb(83, 34, 5);
+            text-decoration: none;
+            font-family: 'Satisfy', cursive;
+            text-shadow: 2px 2px 2px whitesmoke;
+            font-size: 30px;
+            font-weight: 900;
+            transition-property: border;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+
+        }
+
+        .box a:hover {
+            border-left: 6px solid black;
+            border-bottom: 3px solid black;
+            padding: 10px;
+        }
+
+        .mk {
+            display: inline;
+            border: 4px solid rgb(26, 25, 25);
+            border-radius: 20px;
+            margin: 50px;
+            position: relative;
+            left: 70px;
+            color: aliceblue;
+            width: 400px;
+            height: 400px;
+            text-align: center;
+            font-family: 'Patrick Hand', cursive;
+            background-color: rgba(99, 71, 71, 0.712);
+        }
+
+        #ihead {
+            font-size: 40px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            padding: 5px;
+            text-shadow: 2px 2px rgb(61, 32, 32);
+            position: relative;
+            bottom: 67px;
+        }
+
+        .info {
+            color: whitesmoke;
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow: 1px 1px rgb(61, 32, 32);
+            position: relative;
+            bottom: 130px;
+            padding: 5px;
+            width: 80%;
+            margin: auto;
+            height: 50px;
+            text-align: left;
+        }
+
+        .det {
+            color: azure;
+            border-radius: 5px;
+            font-family: 'Karla', sans-serif;
+            padding: 0px;
+            height: 30px;
+            background-color: rgba(53, 17, 17, 0.678);
+        }
+
+        .button {
+            border: 2px solid rgba(53, 17, 17, 0.678);
+            color: rgb(53, 17, 17);
+            margin: 0px 10px;
+            border-radius: 5px;
+            font-size: large;
+        }
+
+        .button:hover {
+            border: 2px solid white;
+        }
+
+        .d2 {
+            display: block;
+            border: 2px solid white;
+            margin: 0px;
+            height: 2000px;
+            background-image: url("pic3.jpg");
+            background-size: 650px 800px;
+            position: relative;
+            bottom: 4px;
+            z-index: -2;
+
+        }
+
+        .genere {
+            color: aliceblue;
+            font-family: 'Ubuntu', sans-serif;
+            text-align: center;
+            font-size: 30px;
+            border: 2px solid red;
+            background: rgb(34, 3, 3);
+            width: 100%;
+            height: 40px;
+            position: sticky;
+            top: 0px;
+            z-index: 10;
+        }
+
+        .book {
+            border: 2px solid red;
+            background-color: aliceblue;
+            height: 200px;
+            width: 200px;
+            margin: 50px;
+            display: inline-flex;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="pic5.jpg" class="back-pic" id="pic1">
+    <header class="menu">
+        <div class="cont">
+
+            <div class="logo"></div>
+            <div class="box"> <a href="#">Home</a></div>
+            <div class="box"> <a href="#">Library</a></div>
+            <div class="box"> <a href="#">Explore</a></div>
+            <div class="box"> <a href="#">Buy</a></div>
+            <div class="box"> <a href="#">About Us</a></div>
+            <div class="box"> <a href="#">Contact</a></div>
+
+        </div>
+    </header>
+    <div class="d1">
+        <div class="title">Welcome to Book Shelf</div>
+        <div class="mk">
+            <form action="backend.php">
+                <h5 id="ihead">Register Yourself</h5>
+                <div class="info">
+                    Name: <input type="text" name="myName" class="det" id="name">
+                </div>
+                <div class="info">
+                    Username: <input type="text" name="nameID" class="det">
+                </div>
+                <div class="info">
+                    Email Id: <input type="email" name="KerbosID" class="det">
+                </div>
+                <div class="info">
+                    DOB: <input type="date" name="TodayDate" class="det">
+                </div>
+                <div class="info">
+                    <label for="state">State:</label>
+                    <select name="MyHome" class="det" id="state">
+                        <option value="Delhi">Delhi NCR</option>
+                        <option value="UP" selected>UP</option>
+                        <option value="Mht">Maharastra</option>
+                        <option value="Rj">Rajasthan</option>
+                    </select>
+                </div>
+                <div class="info">
+                    <input type="submit" value="Submit It" class="button">
+                    <input type="reset" value="Reset Now" class="button">
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="d2">
+        <header class="genere">Genere/Author/Books</header>
+        <div class="class book" id="b1">Box1</div>
+        <div class="class book" id="b2">Box2</div>
+        <div class="class book" id="b3">Box3</div>
+        <div class="class book" id="b4">Box4</div>
+        <div class="class book" id="main">Box5</div>
+        <div class="class book" id="b5">Box6</div>
+        <div class="class book" id="b6">Box7</div>
+        <div class="class book" id="b7">Box8</div>
+
+    </div>
+
+    <!-- 
+        <div class="d3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et, corrupti magni repellendus laudantium
+                provident debitis nulla sequi perferendis quasi hic impedit.</p>
+            </div> -->
+
+    <!-- <video src="Vid3.mp4" class="back-video" id="vd3" autoplay loop muted></video> -->
+
+
+</body>
+
+</html>

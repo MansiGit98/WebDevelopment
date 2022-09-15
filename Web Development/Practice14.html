@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Width, borders and background</title>
+    <style>
+        #firstPara{
+            color: bisque;
+            background-color: hotpink;
+            height: 60px;
+            width: 440px;
+            border: 4px solid rgb(23, 105, 160);
+            /* line 14 == line 16 + 17 + 18 */
+            /* border-width: 4px;
+            border-color: green;
+            border-style: solid;  */
+            border-radius: 11px;
+            font-size: 15px;
+        }
+
+        #secondPara{
+            background-color: rgb(58, 243, 98);
+            height: 100px;
+            width:455px; 
+            border-top: 6px solid rgb(231, 22, 231);
+            border-right: 6px solid rgb(18, 10, 133);
+            border-bottom: 6px solid rgba(9, 144, 27, 0.774);
+            border-left: 6px solid rgb(156, 42, 13);
+            border-top-left-radius: 4px;
+            border-top-right-radius: 14px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 24px;
+        }
+
+        #thirdPara{
+            color: rgb(223, 12, 121);
+            font: bolder;
+            font-size: larger;
+            font-weight: bold;
+            height: 400px;
+            width:455px; 
+            /* background-image: url('dummy.jpg'); */
+            background-image: url('https://images.unsplash.com/photo-1559720708-b7c93480b769?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGFkZHJlc3N8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60');
+        
+            border: 2px solid red;
+            background-repeat: no-repeat; /* repeat-x and repeat-y will make it repeat on x and y axis */
+            /* background-position: 192px 34px; */
+            background-position: center center;
+            /* background-position: bottom right;
+            background-position: top center;  */
+
+        } 
+    </style>
+</head>
+<body>
+    <h3>This is heading</h3>
+    <p id="firstPara">The moon is the satellite of the earth that moves around the earth. <br>Thus, an essay on moon will help us learn more about its enchanting beauty.</p>
+
+    <h3>This is second heading</h3>
+    <p id="secondPara">We see it shining it a night by the light which the sun reflects on it.</p>
+
+    <h3>This is third heading</h3>
+    <p id="thirdPara">It makes the earthly objects shine like silver in the moonlight.</p>
+</body>
+</html>

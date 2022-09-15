@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {                                 /*Univershal selector*/
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #fff59d70;
+        }
+        .a002{
+            border: 4px solid darkgreen;
+            background-color: #bfd8bf;
+            padding: 6px;
+            padding-left: 12px;
+            margin: 15px;
+            margin-right: 600px;
+
+             /* We can set margin/padding for  top, bottom, left and right like this */
+            /* padding-top: 79px;
+            padding-bottom: 79px;
+            padding-left: 34px; 
+            padding-right: 79px;*/
+
+            /* margin-top: 3px;
+            margin-bottom: 5px;
+            margin-left: 34px;
+            margin-right:5px ; */
+
+            /* margin = top right bottom left;  */
+            /* padding = top right bottom left;  */
+
+            /* padding: 23px 56px 6px 78px;   */
+            /* margin: 23px 56px 6px 78px;   */
+        
+            /* padding: y(top/bottom) x(left/right); */
+            /* margin: y(top/bottom) x(left/right); */
+            /* padding: 34px 19px;
+            margin: 14px 19px;
+            width: 533px; */
+            border-radius: 23px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Heading 1</h2>
+    <div class="a002">
+        <h3>Heading 1</h3>
+        <p id="s1">The moon is the satellite of the earth that moves around the earth.</p>
+        <p id="s2">The moon is a beautiful satellite that everyone admires for its beauty.</p>
+    </div>
+    <div class="a002">
+        <h3>Heading 1</h3>
+        <p id="s3">Moreover, the bright moonlight is soothing for all of us.</p>
+    </div>
+    <div class="a002">
+        <h3>Heading 1</h3>
+        <span id="s4">It makes the earthly objects shine like silver in the moonlight.</span>
+    </div>
+    <hr>
+    <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/CSS-Box-Model.png" alt="Error" width="200" height="200">
+    <img src="https://pbs.twimg.com/media/EdIoJ0CXoAA3scd.jpg" alt="Error">
+    
+</body>
+</html>

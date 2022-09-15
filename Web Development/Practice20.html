@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .b12{
+            border: 2px solid darkblue;
+            background-color: aqua;
+            height: 1000px;
+        }
+        /* CSS Position: static(Default),  absolute, relative, fixed, sticky; */
+        .file{
+            background-color: blanchedalmond;
+            border: 2px solid black;
+            height: 3000px;
+        }
+        .box {
+            display: inline-block;
+            border: 3px solid navy;
+            width: 200px;
+            height: 150px;
+            margin: 200px 200px;
+        }
+        #b3{
+            /* relative: move relative to its  original position and leave gap at its original position */
+            /* position: relative; */
+
+            /* absolute: move relative to its parent block position */
+            /* position: absolute;
+            top: 50px;
+            left: 40px; */
+
+            /* fixed: position fixed relative to browser window */
+            /* position: fixed;
+            bottom: 5px;
+            right: 5px; */
+
+            /* sticky: stick within parent box */
+            position: sticky;
+            top: 2px;
+            bottom: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="b12">
+        <h4>Decomposers</h4>
+        <p>These include basic inorganic and organic compounds present in the soil and aerial environment. The
+            essential elements like C, H, N, O, P, S etc. are supplied by water, nitrogen, nitrates, sulphates,
+            phosphates present in soil and atmosphere.</p>
+    </div>
+    <div class="file">
+        <div class="box" id="b1">one</div>
+        <div class="box" id="b2">two</div>
+        <div class="box" id="b3">three</div>
+        <div class="box" id="b4">four</div>
+    </div>
+    
+</body>
+
+</html>
